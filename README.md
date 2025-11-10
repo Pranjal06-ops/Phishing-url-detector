@@ -1,30 +1,43 @@
 # Phishing URL Detector
+# 🛡️ Phishing URL Detector (ML-Based)
 
-ML-based phishing URL detector that extracts URL features and identifies phishing sites. Includes:
+An intelligent, machine learning–powered system that detects phishing URLs by extracting and analyzing key lexical and structural features. Designed for security research, browser safety tools, and automated threat detection workflows.
 
-- REST API for predictions (Flask)
-- Optional web interface 
-- Dockerized deployment
-- Reproducible data → model → deployment workflow
+<div align="center">
 
-## Getting Started
+| API | Web UI | Docker | ML Pipeline |
+|----|----|----|----|
+| ✅ | ✅ | ✅ | ✅ |
 
-### 1. Clone Repo
-```
-git clone <repo-link>
-cd phishing-url-detector-full
-```
+</div>
 
-### 2. Run locally
-```
-pip install -r deployment/requirements.txt
-python src/api/app.py
-```
+---
 
-### 3. Web interface
-Open `webapp/index.html` in browser or deploy via GitHub Pages.
+## 🌍 Overview
 
-## Future Enhancements
-- Connect live backend API
-- Browser extension
-- Continuous learning from new URLs
+Phishing attacks are one of the most common cybersecurity threats, often delivered through malicious links that appear legitimate.  
+This project provides an **ML-based phishing URL detection system** that predicts whether a URL is safe or harmful — in real time.
+
+The system is:
+- **Accurate** — trained on real-world phishing & benign datasets  
+- **Fast** — lightweight inference suitable for real-time use  
+- **Deployable** — run locally, via REST API, web UI, or Docker  
+
+---
+
+## ✨ Features
+
+- 🔍 **URL Feature Extraction** — lexical & structural analysis
+- 🤖 **Machine Learning Model** — phishing vs. legitimate classification
+- 🌐 **REST API (Flask)** — integrates easily with apps and browser extensions
+- 💻 **Optional Web Interface** — simple UI for manual checks
+- 🐳 **Dockerized Deployment** — production-friendly
+- 🔁 **Reproducible Workflow** — data → features → training → deployment
+
+---
+
+## 🗂️ Project Structure
+
+
+
+
