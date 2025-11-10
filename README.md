@@ -1,5 +1,5 @@
 # Phishing URL Detector
-# 🛡️ Phishing URL Detector (ML-Based)
+# 🛡️ Phishing URL Detection (ML-Based)
 
 An intelligent, machine learning–powered system that detects phishing URLs by extracting and analyzing key lexical and structural features. Designed for security research, browser safety tools, and automated threat detection workflows.
 
