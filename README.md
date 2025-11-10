@@ -3,7 +3,7 @@
 ML-based phishing URL detector that extracts URL features and identifies phishing sites. Includes:
 
 - REST API for predictions (Flask)
-- Optional web interface (GitHub Pages demo)
+- Optional web interface 
 - Dockerized deployment
 - Reproducible data → model → deployment workflow
 
