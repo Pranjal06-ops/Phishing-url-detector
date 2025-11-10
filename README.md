@@ -38,6 +38,50 @@ The system is:
 
 ## 🗂️ Project Structure
 
+phishing-url-detector-full/
+│
+├── src/
+│ ├── data/ # Data loading & preprocessing
+│ ├── features/ # URL feature extraction scripts
+│ ├── models/ # Model training & evaluation
+│ └── api/ # Flask REST API
+│
+├── models/ # Saved trained models
+├── webapp/ # (Optional) front-end interface
+├── tests/ # Unit tests
+└── deployment/
+└── requirements.txt # Python dependencies
 
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.9+
+- pip
+- (Optional) Docker & docker-compose
+
+### Local Setup
+
+```bash
+git clone <repo-link>
+cd phishing-url-detector-full
+pip install -r deployment/requirements.txt
+python src/api/app.py
+
+API will start at: http://localhost:5000
+
+Test a prediction: curl -X POST "http://localhost:5000/predict" \
+  -H "Content-Type: application/json" \
+  -d '{"url": "http://example-verify-login-security.com"}'
+
+🌐 Optional Web UI: python -m http.server 8000 --directory webapp
+Then open: http://localhost:8000
+🐳 Docker Deployment: docker build -t phishing-detector .
+docker run -p 5000:5000 phishing-detector
+🧪 Testing & Code Quality:
+ pytest -q
+black .
+flake8 src tests
 
 
